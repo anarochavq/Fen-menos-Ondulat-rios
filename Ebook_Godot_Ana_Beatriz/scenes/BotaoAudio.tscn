@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3]
+[ext_resource type="Script" path="res://scripts/botao_audio.gd" id="1"]
+[node name="BotaoAudio" type="Button"]
+custom_minimum_size = Vector2(78, 72)
+offset_right = 78.0
+offset_bottom = 72.0
+flat = true
+modulate = Color(1, 1, 1, 0.02)
+focus_mode = 0
+mouse_default_cursor_shape = 2
+tooltip_text = "Ligar ou desligar narração"
+script = ExtResource("1")

@@ -1,0 +1,30 @@
+# Fenômenos Ondulatórios e Acústica
+
+**Projeto desenvolvido no Godot 4.7**
+
+Este projeto consiste em um e-book interativo sobre fenômenos ondulatórios e acústica, desenvolvido com o objetivo de apresentar conceitos relacionados às ondas de maneira visual e dinâmica.
+
+O e-book contém quatro páginas: capa, conteúdo interativo sobre ondas, referências bibliográficas e contracapa.
+
+Na página de conteúdo, foram implementados três controles interativos: amplitude, frequência e comprimento de onda. Ao arrastar os controles, o usuário pode observar alterações na representação gráfica da onda.
+
+A animação da onda utiliza o recurso `AnimationPlayer`, enquanto a navegação entre as páginas é realizada por botões reutilizáveis.
+
+O projeto também possui um recurso de narração por voz, utilizando a funcionalidade de conversão de texto em fala (TTS) disponível no dispositivo.
+
+## Como executar
+
+1. Abra o Godot 4.7.
+2. Importe o arquivo `project.godot`.
+3. Abra a cena `scenes/Main.tscn`.
+4. Execute o projeto pressionando **F6**.
+
+## Organização do projeto
+
+- `scenes/` — cenas e componentes reutilizáveis.
+- `scripts/` — scripts responsáveis pelas interações, animações e navegação.
+- `assets/images/` — imagens utilizadas nas páginas.
+
+**Desenvolvido por:** Ana Beatriz Oliveira Vanderlei  
+**Disciplina:** Computação Gráfica e Sistemas Multimídia  
+**Período:** 2026.2

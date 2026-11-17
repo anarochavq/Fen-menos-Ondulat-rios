@@ -1,0 +1,278 @@
+[gd_scene format=3 uid="uid://b7rwygtnd07tr"]
+
+[ext_resource type="Texture2D" uid="uid://bec0m7vf7w07n" path="res://assets/images/iPad mini 5 - 13 (2).png" id="5_nxtc6"]
+[ext_resource type="PackedScene" path="res://scenes/Capa.tscn" id="capa"]
+[ext_resource type="PackedScene" path="res://scenes/Contracapa.tscn" id="contra"]
+[ext_resource type="PackedScene" path="res://scenes/Ondas.tscn" id="ondas"]
+[ext_resource type="PackedScene" path="res://scenes/Referencias.tscn" id="refs"]
+[ext_resource type="Script" uid="uid://bfxo23ddcp6vk" path="res://scripts/main.gd" id="script"]
+
+[node name="Main" type="Control" unique_id=158525902]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("script")
+
+[node name="Conteudo" type="Control" parent="." unique_id=545375321]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Capa" parent="Conteudo" unique_id=119826033 instance=ExtResource("capa")]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 0.0
+offset_bottom = 0.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ImagemInteira" parent="Conteudo/Capa" index="0"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 0.0
+offset_bottom = 0.0
+grow_horizontal = 2
+grow_vertical = 2
+stretch_mode = 0
+
+[node name="BotaoAudio" parent="Conteudo/Capa" index="1"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.053000003
+anchor_top = 0.041
+anchor_right = 0.108
+anchor_bottom = 0.08400001
+offset_left = -17.704002
+offset_top = -16.351002
+offset_right = 18.056
+offset_bottom = 16.475998
+
+[node name="Comecar" parent="Conteudo/Capa" index="2"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.035
+anchor_top = 0.758
+anchor_right = 0.35900003
+anchor_bottom = 0.81900007
+offset_left = -10.880001
+offset_top = -19.192017
+offset_right = 0.28796387
+offset_bottom = 20.343933
+
+[node name="Ondas" parent="Conteudo" unique_id=1782619637 instance=ExtResource("ondas")]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 0.0
+offset_bottom = 0.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ImagemInteira" parent="Conteudo/Ondas" index="0"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 0.0
+offset_bottom = 0.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("5_nxtc6")
+stretch_mode = 0
+
+[node name="BotaoAudio" parent="Conteudo/Ondas" index="1"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.05
+anchor_top = 0.031000001
+anchor_right = 0.07700001
+anchor_bottom = 0.049000002
+offset_left = -18.400002
+offset_top = -17.744001
+offset_right = 38.863995
+offset_bottom = 35.823997
+
+[node name="Voltar" parent="Conteudo/Ondas" index="2"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.040000003
+anchor_top = 0.93700004
+anchor_right = 0.089
+anchor_bottom = 0.96800005
+offset_left = -10.720001
+offset_top = -10.488037
+offset_right = 12.647995
+offset_bottom = 14.767944
+
+[node name="Avancar" parent="Conteudo/Ondas" index="3"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.859
+anchor_top = 0.929
+anchor_right = 0.93200004
+anchor_bottom = 0.97800004
+offset_left = -24.712036
+offset_top = -12.2960205
+offset_right = 20.223999
+offset_bottom = 13.527954
+
+[node name="OndaInterativa" parent="Conteudo/Ondas" index="4"]
+layout_mode = 1
+anchors_preset = 0
+offset_left = 162.0
+offset_top = 458.0
+offset_right = 643.0
+offset_bottom = 503.0
+
+[node name="ControleAmplitude" parent="Conteudo/Ondas" index="5"]
+anchors_preset = 0
+offset_left = 114.0
+offset_top = 600.0
+offset_right = 269.0
+offset_bottom = 630.0
+
+[node name="ControleFrequencia" parent="Conteudo/Ondas" index="6"]
+anchors_preset = 0
+offset_left = 291.0
+offset_top = 603.0
+offset_right = 446.0
+offset_bottom = 633.0
+
+[node name="ControleComprimento" parent="Conteudo/Ondas" index="7"]
+anchors_preset = 0
+offset_left = 494.0
+offset_top = 606.0
+offset_right = 649.0
+offset_bottom = 636.0
+
+[node name="Referencias" parent="Conteudo" unique_id=414206055 instance=ExtResource("refs")]
+visible = false
+layout_mode = 1
+anchor_right = 1.0
+anchor_bottom = 1.1110001
+offset_right = -2.0
+offset_bottom = -113.66406
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ImagemInteira" parent="Conteudo/Referencias" index="0"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 0.0
+offset_bottom = 0.4000244
+grow_horizontal = 2
+grow_vertical = 2
+stretch_mode = 0
+
+[node name="BotaoAudio" parent="Conteudo/Referencias" index="1"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.026
+anchor_top = 0.012
+anchor_right = 0.101
+anchor_bottom = 0.060000002
+offset_left = 0.031999588
+offset_top = 0.4159994
+offset_right = 20.432
+offset_bottom = 18.079994
+
+[node name="Voltar" parent="Conteudo/Referencias" index="2"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.057000004
+anchor_top = 0.92800003
+anchor_right = 0.127
+anchor_bottom = 0.957
+offset_left = -13.662003
+offset_top = -19.272034
+offset_right = 19.575996
+offset_bottom = 18.67804
+
+[node name="Avancar" parent="Conteudo/Referencias" index="3"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.85300004
+anchor_top = 0.924
+anchor_right = 0.94100004
+anchor_bottom = 0.96800005
+offset_left = -9.39801
+offset_top = -13.176025
+offset_right = 15.19397
+offset_bottom = 10.093933
+
+[node name="Contracapa" parent="Conteudo" unique_id=22971885 instance=ExtResource("contra")]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 0.0
+offset_bottom = 0.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ImagemInteira" parent="Conteudo/Contracapa" index="0"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 0.0
+offset_bottom = 0.0
+grow_horizontal = 2
+grow_vertical = 2
+stretch_mode = 0
+
+[node name="BotaoAudio" parent="Conteudo/Contracapa" index="1"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.044000003
+anchor_top = 0.025
+anchor_right = 0.104
+anchor_bottom = 0.058000002
+offset_left = -13.792004
+offset_top = -14.300001
+offset_right = 18.127998
+offset_bottom = 20.343994
+
+[node name="Voltar" parent="Conteudo/Contracapa" index="2"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.059000004
+anchor_top = 0.9250001
+anchor_right = 0.124000005
+anchor_bottom = 0.96400005
+offset_left = -11.312004
+offset_top = -14.200073
+offset_right = 19.767998
+offset_bottom = 9.299988
+
+[node name="Casa" parent="Conteudo/Contracapa" index="3"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.89400005
+anchor_top = 0.023000002
+anchor_right = 0.95000005
+anchor_bottom = 0.064
+offset_left = -14.592041
+offset_top = -13.036003
+offset_right = 16.399963
+offset_bottom = 12.551994
+
+[editable path="Conteudo/Capa"]
+[editable path="Conteudo/Ondas"]
+[editable path="Conteudo/Referencias"]
+[editable path="Conteudo/Contracapa"]
